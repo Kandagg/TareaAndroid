@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "343617396117",
+    "project_id": "taller-apps-aiep",
+    "storage_bucket": "taller-apps-aiep.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343617396117:android:76c393b3cd79ae91706a9c",
+        "android_client_info": {
+          "package_name": "com.example.aiepsemana4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0mXr6S-5T0EX3jzyhihsbuYK7DYNAkhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

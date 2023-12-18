@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="148dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="262dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toTopOf="@+id/cajaCalculo"
+        app:layout_constraintEnd_toEndOf="@+id/botonCalcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cajaTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="Ingrese Texto"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/cajaPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cajaPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/cajaResultado"
+        app:layout_constraintStart_toStartOf="@+id/cajaTexto"
+        app:layout_constraintTop_toBottomOf="@+id/cajaTexto" />
+
+    <Button
+        android:id="@+id/botonLimpiar"
+        android:layout_width="103dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="354dp"
+        android:rotationX="3"
+        android:text="Limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonAccion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cajaCalculo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/botonAccion"
+        android:layout_width="103dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="351dp"
+        android:text="Mensaje"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonCalcular"
+        app:layout_constraintStart_toEndOf="@+id/botonLimpiar"
+        app:layout_constraintTop_toBottomOf="@+id/cajaCalculo" />
+
+    <TextView
+        android:id="@+id/cajaCalculo"
+        android:layout_width="95dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="59dp"
+        android:text="Resultado:"
+        app:layout_constraintBottom_toTopOf="@+id/botonAccion"
+        app:layout_constraintEnd_toStartOf="@+id/cajaResultado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cajaResultado"
+        android:layout_width="87dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="57dp"
+        android:text="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/botonCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cajaCalculo"
+        app:layout_constraintTop_toBottomOf="@+id/cajaPass" />
+
+    <Button
+        android:id="@+id/botonCalcular"
+        android:layout_width="100dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="351dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonAccion"
+        app:layout_constraintTop_toBottomOf="@+id/cajaResultado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

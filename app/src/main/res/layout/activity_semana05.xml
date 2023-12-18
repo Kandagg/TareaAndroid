@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Semana05">
+
+    <Button
+        android:id="@+id/botonCalcular2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="273dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonLimpiar2"
+        app:layout_constraintTop_toBottomOf="@+id/textResultado2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textResultado2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="504dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="26dp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/botonCalcular2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textDistancia"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDistancia"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="25dp"
+        android:text="Distancia"
+        app:layout_constraintBottom_toTopOf="@+id/botonLimpiar2"
+        app:layout_constraintEnd_toStartOf="@+id/textResultado2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLongitud2" />
+
+    <Button
+        android:id="@+id/botonLimpiar2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="272dp"
+        android:rotationX="3"
+        android:text="Limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonCalcular2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDistancia"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/textLatitud1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="Ingrese Latitud 1"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textLongitud1"
+        app:layout_constraintStart_toStartOf="@+id/textoDistancia"
+        app:layout_constraintTop_toBottomOf="@+id/textoDistancia" />
+
+    <TextView
+        android:id="@+id/textoDistancia"
+        android:layout_width="203dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginBottom="53dp"
+        android:text="Calculo Distancia"
+        app:layout_constraintBottom_toTopOf="@+id/textLatitud1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textLongitud1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="Ingrese Longitud 1"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textLatitud2"
+        app:layout_constraintStart_toStartOf="@+id/textLatitud1"
+        app:layout_constraintTop_toBottomOf="@+id/textLatitud1" />
+
+    <EditText
+        android:id="@+id/textLatitud2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="Ingrese Latitud 2"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textLongitud2"
+        app:layout_constraintStart_toStartOf="@+id/textLongitud1"
+        app:layout_constraintTop_toBottomOf="@+id/textLongitud1" />
+
+    <EditText
+        android:id="@+id/textLongitud2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Ingrese Longitud 2"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textDistancia"
+        app:layout_constraintStart_toStartOf="@+id/textLatitud2"
+        app:layout_constraintTop_toBottomOf="@+id/textLatitud2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
